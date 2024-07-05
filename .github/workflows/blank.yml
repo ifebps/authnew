@@ -12,8 +12,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Preparing environment...
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
-        RDP_PASSWORD: ${{ secrets.RDP_PASSWORD }}
+        NGROK_AUTH_TOKEN: 2ipj0VaR08sgNR2o171sKVu49gV_FgMwLh5RhzH1nA956m3P
+        RDP_PASSWORD: Iyan@1902
       run: ./configure.ps1
     - name: Creating tunnel with ngrok...
       run: ./ngrok/ngrok tcp 3389
